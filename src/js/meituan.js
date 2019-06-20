@@ -20,7 +20,7 @@ $('#gotop').click(function () {
 getData();
 var dataList;
 function getData() {
-	var url = "../api/list.json";
+	var url = "https://famewlh.github.io/meituan-mobilephone/api/list.json";
 		$.ajax({
 			type: "GET",
 			dataType: "json",
@@ -35,7 +35,7 @@ function addList(data) {
 	var str = '';
 	data.list.forEach(function (ele, index) {
 		str += '<li class="foodspic">\
-				<a href = "./meituan-detail.html?id='+ ele.id + '" class="clearfix" >\
+				<a href = "https://famewlh.github.io/meituan-mobilephone/meituan-detail.html?id='+ ele.id + '" class="clearfix" >\
 					<img src="'+ ele.info.imgurl + '" alt=""><dl><dt>' + ele.info.name + '</dt>\
 							<dd><p class="foodtitle">'+ ele.info.des + '</p>\
 								<p class="price"><span><strong>'+ ele.info.price + '</strong>\

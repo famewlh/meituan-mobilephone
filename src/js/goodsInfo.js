@@ -13,7 +13,7 @@ function getId() {
     return idNum;
 }
 function getGoodsInfo() {
-    var _url = '../api/list.json';
+    var _url = 'https://famewlh.github.io/meituan-mobilephone/api/list.json';
     $.ajax({
         type: 'GET',
         dataType: 'json',
